@@ -1,6 +1,7 @@
-# Inspirebot (for Lita)
+Lita Inspirebot Handler
+=======================
 
-Inspirational quotes from Steve Jobs, Richard Branson, and others.
+`lita-inspirebot` is a handler for Lita that replies with a set of inspirational quotes.
 
 ## Installation
 

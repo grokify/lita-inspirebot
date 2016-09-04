@@ -86,11 +86,9 @@ end
 module Lita
   module Handlers
     class Inspirebot < Handler
-      is_command = false
-      route(/^authors\s*$/i, :authors, command: is_command, help: { "echo TEXT" => "Replies back with TEXT." })
-      route(/^inspire!?\s*$/i, :quote, command: is_command, help: { "echo TEXT" => "Replies back with TEXT." })
-      route(/^quote\s+([A-Za-z]+)!?\s*/i, :quote, command: is_command, help: { "quote AUTHOR" => "Replies with random AUTHOR quote." })
-      route(/^help\s*$/i, :menu, command: is_command, help: { "echo TEXT" => "Replies back with TEXT." })
+      route(/^inspire me!?\s*$/i, :quote, command: false, help: { 'inspire me!' => 'Returns a random quote' })
+      route(/^quote authors\s*$/i, :authors, command: false, help: { 'quote authors' => 'Returns a list of known authors.' })
+      route(/^quote\s+([A-Za-z0-9]+)!?\s*/i, :quote, command: false, help: { 'quote <AUTHOR>' => 'Replies with random AUTHOR quote.' })
 
       def authors(response)
         @quotes = ::Inspirebot::Quotes.new
@@ -100,7 +98,10 @@ module Lita
 
       def quote(response)
         @quotes = ::Inspirebot::Quotes.new
-        response.reply @quotes.get_quote(response.match_data[1].downcase)
+        author = response.match_data[1].downcase
+        unless author == 'authors'
+          response.reply @quotes.get_quote(author)
+        end
       end
 
       def menu(response)

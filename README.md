@@ -24,9 +24,17 @@ gem "lita-inspirebot"
 ## Usage
 
 ```
+You > quote authors
+Lita > I know about the following authors: branson, jobs, tesla. To hear quotes, type QUOTE {AUTHOR}
 You > quote jobs!
 Lita > My favorite things in life don't cost any money. It's really clear that the most precious resource we all have is time.
 ```
+
+## Notes
+
+### RingCentral SMSbot Developer Accounts
+
+In addition to standard routes, this handler also supports routes for building [SMSbots using RingCentral](https://github.com/grokify/lita-ringcentral)'s [developer sandbox accounts](https://developers.ringcentral.com).
 
 ## License
 

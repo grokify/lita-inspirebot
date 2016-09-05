@@ -1,7 +1,7 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-inspirebot'
-  spec.date          = '2016-08-04'
-  spec.version       = '0.0.2'
+  spec.date          = '2016-09-05'
+  spec.version       = '0.0.3'
   spec.authors       = ['John Wang']
   spec.email         = ['johncwang@gmail.com']
   spec.description   = 'A Lita handler for inspirational quotes.'

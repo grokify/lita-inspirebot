@@ -72,7 +72,7 @@ module Inspirebot
         quote += ' - ' + display if @add_attribution
       else
         authors = authors_string
-        quote = "I'm sorry, I could not found quotes for #{name}. I know about the following authors #{authors}"
+        quote = "I'm sorry, I could not found quotes for #{name}. To get a list of authors, type QUOTE AUTHORS"
       end
       return quote
     end
@@ -86,26 +86,29 @@ end
 module Lita
   module Handlers
     class Inspirebot < Handler
-      route(/^inspire me!?\s*$/i, :quote, command: false, help: { 'inspire me!' => 'Returns a random quote' })
-      route(/^quote authors\s*$/i, :authors, command: false, help: { 'quote authors' => 'Returns a list of known authors.' })
-      route(/^quote\s+([A-Za-z0-9]+)!?\s*/i, :quote, command: false, help: { 'quote <AUTHOR>' => 'Replies with random AUTHOR quote.' })
+      route(/^(?:Test SMS usng a RingCentral Developer account - )?inspire me!?\s*$/i, :quote, command: false, help: { 'inspire me!' => 'Returns a random quote' })
+      route(/^(?:Test SMS usng a RingCentral Developer account - )?authors\s*$/i, :authors, command: false, help: { 'quote authors' => 'Returns a list of known authors.' })
+      route(/^(?:Test SMS usng a RingCentral Developer account - )?quote\s+([A-Za-z0-9]+)!?\s*/i, :quote, command: false, help: { 'quote <AUTHOR>' => 'Replies with random AUTHOR quote.' })
 
       def authors(response)
         @quotes = ::Inspirebot::Quotes.new
-        authors = @quotes.authors_string
+        authors = @quotes.authors_string.upcase
         response.reply "I know about the following authors: #{authors}. To hear quotes, type QUOTE {AUTHOR}"
       end
 
       def quote(response)
         @quotes = ::Inspirebot::Quotes.new
         author = response.match_data[1].downcase
-        unless author == 'authors'
+        if author.downcase == 'authors'
+          authors = @quotes.authors_string.upcase
+          response.reply "I know about the following authors: #{authors}. To hear quotes, type QUOTE {AUTHOR}"
+        else
           response.reply @quotes.get_quote(author)
         end
       end
 
       def menu(response)
-        help = 'use AUTHORS to get a list of authors. use QUOTE {AUTHOR} to get a random quote from the author'
+        help = 'use QUOTE AUTHORS to get a list of authors. use QUOTE {AUTHOR} to get a random quote from the author'
         response.reply @quotes.get_quote(help)
       end
     end

@@ -14,46 +14,46 @@ module Inspirebot
         branson: {
           name: 'Richard Branson',
           quotes: [
-          "You don't learn to walk by following rules. You learn by doing, and by falling over.",
-          "Business opportunities are like buses, there’s always another one coming.",
-          "A business has to be involving, it has to be fun, and it has to exercise your creative instincts.",
-          "Do not be embarrassed by your failures, learn from them and start again.",
-          "One thing is certain in business. You and everyone around you will make mistakes.",
-          "My general attitude to life is to enjoy every minute of every day. I never do anything with a feeling of, ’Oh God, I’ve got to do this today.’",
-          "I cannot remember a moment in my life when I have not felt the love of my family. We were a family that would have killed for each other - and we still are.",
-          "I never get the accountants in before I start up a business. It's done on gut feeling, especially if I can see that they are taking the mickey out of the consumer.",
-          "I love the freedom of movement that my phone gives me. That has definitely transformed my life."
+            "You don't learn to walk by following rules. You learn by doing, and by falling over.",
+            "Business opportunities are like buses, there’s always another one coming.",
+            "A business has to be involving, it has to be fun, and it has to exercise your creative instincts.",
+            "Do not be embarrassed by your failures, learn from them and start again.",
+            "One thing is certain in business. You and everyone around you will make mistakes.",
+            "My general attitude to life is to enjoy every minute of every day. I never do anything with a feeling of, ’Oh God, I’ve got to do this today.’",
+            "I cannot remember a moment in my life when I have not felt the love of my family. We were a family that would have killed for each other - and we still are.",
+            "I never get the accountants in before I start up a business. It's done on gut feeling, especially if I can see that they are taking the mickey out of the consumer.",
+            "I love the freedom of movement that my phone gives me. That has definitely transformed my life."
           ],
         },
         jobs: {
           name: 'Steve Jobs',
           quotes: [
-          "Be a yardstick of quality. Some people aren't used to an environment where excellence is expected.",
-          "Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me.",
-          "Design is not just what it looks like and feels like. Design is how it works.",
-          "Do you want to spend the rest of your life selling sugared water or do you want a chance to change the world?",
-          "Don’t let the noise of others’ opinions drown out your own inner voice.",
-          "I want to put a ding in the universe.",
-          "Innovation distinguishes between a leader and a follower.",
-          "It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.",
-          "My favorite things in life don't cost any money. It's really clear that the most precious resource we all have is time.",
-          "Quality is more important than quantity. One home run is much better than two doubles.",
-          "Sometimes life is going to hit you in the head with a brick. Don't lose faith.",
-          "Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations.",
-          "Things don't have to change the world to be important.",
-          "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do."
-        ]
+            "Be a yardstick of quality. Some people aren't used to an environment where excellence is expected.",
+            "Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me.",
+            "Design is not just what it looks like and feels like. Design is how it works.",
+            "Do you want to spend the rest of your life selling sugared water or do you want a chance to change the world?",
+            "Don’t let the noise of others’ opinions drown out your own inner voice.",
+            "I want to put a ding in the universe.",
+            "Innovation distinguishes between a leader and a follower.",
+            "It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.",
+            "My favorite things in life don't cost any money. It's really clear that the most precious resource we all have is time.",
+            "Quality is more important than quantity. One home run is much better than two doubles.",
+            "Sometimes life is going to hit you in the head with a brick. Don't lose faith.",
+            "Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations.",
+            "Things don't have to change the world to be important.",
+            "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do."
+          ]
         },
         tesla: {
           name: 'Nikola Tesla',
           quotes: [
-          "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.",
-          "The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence.",
-          "The scientists of today think deeply instead of clearly. One must be sane to think clearly, but one can think deeply and be quite insane.",
-          "Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.",
-          "The present is theirs; the future, for which I really worked, is mine.",
-          "I do not think you can name many great inventions that have been made by married men.",
-          "The spread of civilisation may be likened to a fire; first, a feeble spark, next a flickering flame, then a mighty blaze, ever increasing in speed and power."
+            "If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.",
+            "The day science begins to study non-physical phenomena, it will make more progress in one decade than in all the previous centuries of its existence.",
+            "The scientists of today think deeply instead of clearly. One must be sane to think clearly, but one can think deeply and be quite insane.",
+            "Our virtues and our failings are inseparable, like force and matter. When they separate, man is no more.",
+            "The present is theirs; the future, for which I really worked, is mine.",
+            "I do not think you can name many great inventions that have been made by married men.",
+            "The spread of civilisation may be likened to a fire; first, a feeble spark, next a flickering flame, then a mighty blaze, ever increasing in speed and power."
           ]
         }
       }

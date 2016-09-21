@@ -28,16 +28,20 @@ module Inspirebot
         jobs: {
           name: 'Steve Jobs',
           quotes: [
-          "Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me.",
-          "Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations.",
           "Be a yardstick of quality. Some people aren't used to an environment where excellence is expected.",
-          "Innovation distinguishes between a leader and a follower.",
+          "Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me.",
           "Design is not just what it looks like and feels like. Design is how it works.",
-          "It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.",
+          "Do you want to spend the rest of your life selling sugared water or do you want a chance to change the world?",
+          "Don’t let the noise of others’ opinions drown out your own inner voice.",
           "I want to put a ding in the universe.",
-          "Sometimes life is going to hit you in the head with a brick. Don't lose faith.",
+          "Innovation distinguishes between a leader and a follower.",
+          "It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them.",
           "My favorite things in life don't cost any money. It's really clear that the most precious resource we all have is time.",
-          "Things don't have to change the world to be important."
+          "Quality is more important than quantity. One home run is much better than two doubles.",
+          "Sometimes life is going to hit you in the head with a brick. Don't lose faith.",
+          "Sometimes when you innovate, you make mistakes. It is best to admit them quickly, and get on with improving your other innovations.",
+          "Things don't have to change the world to be important.",
+          "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do."
         ]
         },
         tesla: {
